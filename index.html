@@ -356,21 +356,21 @@ document.addEventListener('keydown', function(e) {
   let row = player.row;
   let col = player.col;
 
-  // left arrow key
-  if (e.which === 37) {
+  // right arrow key moves left
+  if (e.which === 39) {
     col--;
   }
-  // up arrow key
+  // up arrow key moves down
   else if (e.which === 38) {
-    row--;
+    row++;
   }
-  // right arrow key
-  else if (e.which === 39) {
+  // left arrow key moves right
+  else if (e.which === 37) {
     col++;
   }
-  // down arrow key
+  // down arrow key moves up
   else if (e.which === 40) {
-    row++;
+    row--;
   }
   // space key (bomb)
   else if (
